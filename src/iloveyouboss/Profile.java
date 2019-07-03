@@ -42,7 +42,7 @@ public class Profile {
 		if(kill) {
 			return false;
 		return anyMatches;
-		}
+		}}
 		
 		public int score() {
 			return score;
