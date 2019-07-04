@@ -14,7 +14,7 @@ public class ProfileTest {
 		profile.add(profileAnswer);
 		Criteria criteria = new Criteria();
 		Answer criteriaAnswer = new Answer(question, Bool.TRUE);
-		Criterion criterion = new Criterion(citeriaAnswer, Weight.MustMatch);
+		Criterion criterion = new Criterion(criteriaAnswer, Weight.MustMatch);
 		criteria.add(criterion);
 		
 		boolean matches = profile.matches(criteria);
