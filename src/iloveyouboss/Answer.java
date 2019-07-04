@@ -14,14 +14,14 @@ public class Answer {
 		this.i = characteristic.indexOf(matchingValue);
 	}
 	
-	public String getQeustionText() {
+	public String getQuestionText() {
 		return question.getText();
 	}
 	
 	@Override
 	public String toString() {
 		return String.format("%s %s", question.getText(), 
-				question.GetAnswerChoice(i));
+				question.getAnswerChoice(i));
 	}
 	
 	public boolean match(int expected) {

@@ -14,7 +14,7 @@ public class Person {
 		return characteristics;
 	}
 	
-	public List<Question> withCharacteristic(String questionPatter){
+	public List<Question> withCharacteristic(String questionPattern){
 		return characteristics.stream().filter(c -> c.getText().endsWith(
 				questionPattern)).collect(Collectors.toList());
 	}

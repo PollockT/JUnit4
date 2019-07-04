@@ -16,7 +16,7 @@ public class Profile {
 	}
 	
 	public void add(Answer answer) {
-		answers.put(answer.getQuestionTet(), answer);
+		answers.put(answer.getQuestionText(), answer);
 	}
 	
 	public boolean matches(Criteria criteria) {
@@ -39,10 +39,10 @@ public class Profile {
 			}
 			anyMatches |= match;
 		}
-		if(kill) {
+		if(kill) 
 			return false;
 		return anyMatches;
-		}}
+		}
 		
 		public int score() {
 			return score;
